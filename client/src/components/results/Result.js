@@ -7,7 +7,7 @@ class Result extends Component {
       <div>
         
       </div>
-    )
+    );
   }
 }
 

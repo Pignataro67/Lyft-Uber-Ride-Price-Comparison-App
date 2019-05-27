@@ -3,6 +3,7 @@ import Button from '../Button'
 import RouteMap from './RouteMap'
 import Card from '../Card'
 import { Redirect } from "react-router-dom";
+
 class ConfirmRoute extends Component{
   state = {
     redirectToResults: false,
