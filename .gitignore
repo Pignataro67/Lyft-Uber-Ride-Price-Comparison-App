@@ -7,10 +7,13 @@
 # Ignore bundler config.
 /.bundle
 
+<<<<<<< HEAD
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+=======
+>>>>>>> 6e00a5944d0a39da9fd156bdbfe5f7dafef18ac7
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -21,15 +24,21 @@
 /storage/*
 !/storage/.keep
 
+<<<<<<< HEAD
 /node_modules
 /yarn-error.log
 
 /public/assets
+=======
+>>>>>>> 6e00a5944d0a39da9fd156bdbfe5f7dafef18ac7
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+<<<<<<< HEAD
 
 /node_modules
 /client/node_modules
 /lyft-uber-ride-price-comparison-app/client/node_modules
+=======
+>>>>>>> 6e00a5944d0a39da9fd156bdbfe5f7dafef18ac7

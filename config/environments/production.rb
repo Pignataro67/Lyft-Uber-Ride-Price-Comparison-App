@@ -22,6 +22,7 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
+<<<<<<< HEAD
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
@@ -31,6 +32,8 @@ Rails.application.configure do
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
+=======
+>>>>>>> 6e00a5944d0a39da9fd156bdbfe5f7dafef18ac7
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
@@ -61,7 +64,11 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
+<<<<<<< HEAD
   # config.active_job.queue_name_prefix = "lyft-uber-ride-price-comparison-app_#{Rails.env}"
+=======
+  # config.active_job.queue_name_prefix = "lyft-uber-ride-comparison-app_#{Rails.env}"
+>>>>>>> 6e00a5944d0a39da9fd156bdbfe5f7dafef18ac7
 
   config.action_mailer.perform_caching = false
 

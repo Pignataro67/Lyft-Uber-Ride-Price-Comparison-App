@@ -17,9 +17,12 @@ chdir APP_ROOT do
   system! 'gem install bundler --conservative'
   system('bundle check') || system!('bundle install')
 
+<<<<<<< HEAD
   # Install JavaScript dependencies if using Yarn
   # system('bin/yarn')
 
+=======
+>>>>>>> 6e00a5944d0a39da9fd156bdbfe5f7dafef18ac7
   puts "\n== Updating database =="
   system! 'bin/rails db:migrate'
 

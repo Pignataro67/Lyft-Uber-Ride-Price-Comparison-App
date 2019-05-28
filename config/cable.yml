@@ -7,4 +7,8 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+<<<<<<< HEAD
   channel_prefix: lyft-uber-ride-price-comparison-app_production
+=======
+  channel_prefix: lyft-uber-ride-comparison-app_production
+>>>>>>> 6e00a5944d0a39da9fd156bdbfe5f7dafef18ac7
