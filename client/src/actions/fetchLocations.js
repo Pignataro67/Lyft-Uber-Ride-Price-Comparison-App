@@ -74,10 +74,10 @@ function _fetchLocations(input) {
 
   export function fetchLyftEstimate(pickupLat, pickupLong, dropoffLat, dropoffLong) {
     return (dispatch) => {
-      dispatch({ type: 'FETCHING_LYFT_ESTIMATE'});
-      fetch(`RailsApi/lyft?pickupLat=${pickupLat}&pickupLong=${pickupLong}&dropoffLat=${dropoffLat}&dropoffLong=${dropoffLong}`)
+      dispatch({ type: 'FETCHING_LYFT_ESTIMATE' });
+      fetch(`/RailsApi/lyft?pickupLat=${pickupLat}&pickupLong=${pickupLong}&dropoffLat=${dropoffLat}&dropoffLong=${dropoffLong}`)
       .then(res => res.json())
-      .then(data => _normalizeLyft(data)
+      .then(data => _normalizeLyft(data))
       .then(estimates => dispatch({ type: 'ADD_LYFT_ESTIMATES_TO_STATE', estimates: estimates }))
     };
   }
@@ -90,18 +90,3 @@ function _fetchLocations(input) {
       .then(key => dispatch({ type: 'ADD_MAPBOX_KEY_TO_STATE', key }));
     };
   }
-}
-  // export function convertDropoffLatLong(location) {
-  //   console.log(location)
-  //   return (dispatch) => {
-  //     dispatch({type: 'CONVERTING_DROPOFF_LAT_LONG'})
-  //     return _getLatLong(location).then(({ lat, long }) => dispatch({type: 'RETRIEVE_DROPOFF_LAT_LONG', dropoffLat: lat, dropOffLong: long }))
-  //   }
-  // }
-  
-  // export function convertLatLong(pickupLocation, dropoffLocation) {
-  //   return async (dispatch) => {
-  //     await dispatch(convertPickupLatLong(pickupLocation))
-  //     await dispatch(convertDropoffLatLong(dropoffLocation))
-  //   }
-  // }
